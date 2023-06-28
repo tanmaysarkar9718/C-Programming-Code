@@ -54,7 +54,7 @@ int main()
     }
     else
     {
-        printf("Math Error!");
+        printf("Multiplication is not possible!");
     }
     return 0;
 }
