@@ -1,0 +1,37 @@
+                                                   /*Matrix Transpose*/
+#include <stdio.h>
+int main()
+{
+    int row,col;
+    printf("Enter the row of the matrix :\n");
+    scanf("%d",&row);
+    printf("Enter the column of matrix a:\n");
+    scanf("%d",&col);
+     int i,j,a[row][col],transpose[col][row];
+    for(i=0;i<row;i++)
+    {
+        for(j=0;j<col;j++)
+        {
+            printf("Enter the value of a[%d][%d]\n",i+1,j+1);
+            scanf("%d",&a[i][j]);
+        }
+    }
+    for(i=0;i<row;i++)
+    {
+        for(j=0;j<col;j++)
+        {
+            transpose[j][i]=a[i][j];
+        }
+    }
+    printf("The Transpose Matrix is:-");
+    printf("\n");
+    for(i=0;i<col;i++)
+    {
+        for(j=0;j<row;j++)
+        {
+            printf("%d ",transpose[i][j]);
+        }
+        printf("\n");
+    }
+return 0;
+}
