@@ -1,0 +1,56 @@
+                                                /*Matrix Subtraction*/
+#include <stdio.h>
+int main()
+{
+    int row1,col1,row2,col2;
+    printf("Enter the row of matrix a:\n");
+    scanf("%d",&row1);
+    printf("Enter the col of matrix a:\n");
+    scanf("%d",&col1);
+    printf("Enter the row of matrix b:\n");
+    scanf("%d",&row2);
+    printf("Enter the col of matrix b:\n");
+    scanf("%d",&col2);
+     int i,j,a[row1][col1],b[row2][col2],sub[row1][col1];
+    if(row1==row2&&col1==col2)
+    {
+    for(i=0;i<row1;i++)
+    {
+        for(j=0;j<col1;j++)
+        {
+            printf("Enter the value of a[%d][%d]\n",i+1,j+1);
+            scanf("%d",&a[i][j]);
+        }
+    }
+    for(i=0;i<row2;i++)
+    {
+        for(j=0;j<col2;j++)
+        {
+            printf("Enter the value of b[%d][%d]\n",i+1,j+1);
+            scanf("%d",&b[i][j]);
+        }
+    }
+    for(i=0;i<row1;i++)
+    {
+        for(j=0;j<row2;j++)
+        {
+            sub[i][j]=a[i][j]-b[i][j];
+        }
+    }
+    printf("The Subtraction is:-");
+    printf("\n");
+    for(i=0;i<row1;i++)
+    {
+        for(j=0;j<col1;j++)
+        {
+            printf("%d ",sub[i][j]);
+        }
+        printf("\n");
+    }
+    }
+    else
+    {
+        printf("Subtraction is not possible!");
+    } 
+return 0;
+}
