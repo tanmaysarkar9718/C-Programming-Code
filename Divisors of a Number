@@ -1,0 +1,21 @@
+                                                   /*Divisors of a number*/
+#include <stdio.h>
+void divisors(int x)
+{
+    printf("The divisors of %d are:\n",x);
+    for(int i=1;i<=x;i++)
+    {
+        if(x%i==0)
+        {
+            printf("%d\n",i);
+        }
+    }
+}
+int main()
+{
+    int num;
+    printf("Enter an integer:\n");
+    scanf("%d",&num);
+    divisors(num);
+    return 0;
+}
