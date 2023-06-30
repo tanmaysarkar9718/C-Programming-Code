@@ -1,0 +1,24 @@
+                                             /*strings concatenate*/
+#include <stdio.h>
+int main()
+{
+    char a[8],b[8],c[15];
+    printf("Enter your first name:-\n");
+    gets(a);
+    printf("Enter your second name:-\n");
+    gets(b);
+    int i,j;
+    for(i=0;a[i]!='\0';i++)
+    {
+        c[i]=a[i];
+    }
+    c[i]=' ';
+    i++;
+    for(j=0;b[j]!='\0';i++,j++)
+    {
+        c[i]=b[j];
+    }
+    c[i]='\0';
+    printf("Your full name is:%s",c);
+    return 0;
+}
