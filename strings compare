@@ -1,0 +1,33 @@
+                                   /*strings compare*/
+#include <stdio.h>
+
+int main()
+{
+    char a[20],b[20];
+    int count=0;
+    printf("Enter first string:-\n");
+    gets(a);
+    printf("Enter second string:-\n");
+    gets(b);
+    for(int i=0;a[i]!='\0';i++)
+    {
+        if(a[i]==b[i])
+        {
+            continue;
+        }
+        else
+        {
+            count++;
+            break;
+        }
+    }
+    if(count==0)
+    {
+        printf("The two string is similar.\n");
+    }
+    else
+    {
+        printf("The two string is not similar.\n");
+    }
+    return 0;
+}
