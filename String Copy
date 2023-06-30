@@ -1,0 +1,14 @@
+                                   /*string Copy*/
+#include <stdio.h>
+int main()
+{
+    char a[20],b[20];
+    printf("Enter a string:-\n");
+    gets(a);
+    for(int i;a[i]!='\0';i++)
+    {
+        b[i]=a[i];
+    }
+    printf("The copied string is:%s",b);
+    return 0;
+}
