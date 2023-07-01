@@ -1,0 +1,13 @@
+                                /*Basics of Pointer*/
+#include <stdio.h>
+int main()
+{
+    int a,*ptr;
+    printf("Enter the first number:-\n");
+    scanf("%d",&a);
+    ptr=&a;
+    printf("Your Memory location is:%p\n",ptr); //Print memory location
+    printf("Your entered number is:%d\n",a); //Usual way to print any value
+    printf("Your entered number is:%d\n",*ptr); //Print any value using his memory address(Pointer) 
+    return 0;
+}
