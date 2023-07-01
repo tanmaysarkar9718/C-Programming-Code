@@ -1,0 +1,19 @@
+                                /*Basics of Structure*/
+#include <stdio.h>
+struct student{
+    int id;
+    char name[20];
+    float cgpa;
+};
+int main()
+{
+    struct student s;
+    printf("Enter your name: \n");
+    gets(s.name);
+    printf("Enter your id: \n");
+    scanf("%d",&s.id);
+    printf("Enter your cgpa: \n");
+    scanf("%f",&s.cgpa);
+    printf("id:%d\nName:%s\ncgpa:%0.2f\n",s.id,s.name,s.cgpa);
+    return 0;
+}
